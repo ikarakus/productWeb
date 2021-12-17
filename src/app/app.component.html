@@ -1,0 +1,58 @@
+<div class="container-fluid">
+<nav class="navbar navbar-icon-top fixed-top navbar-expand-xl navbar-light" style="z-index: 999;height: 8vh">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" data-toggle="collapse" data-target=".navbar-collapse.show">
+      <li class="nav-item" *ngIf="user">
+        <a class="nav-link"  routerLink="/product">
+          <i class="fa fa-industry"></i>
+          {{ 'product.title' | translate }}
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav " data-toggle="collapse" data-target=".navbar-collapse.show">
+      <li class="nav-item" *ngIf="user">
+        <a class="nav-link" href="/" (click)="logOut()">
+          <i class="fa fa-sign-out"></i>
+          {{ 'logout' | translate }}
+        </a>
+      </li>
+            <li class="nav-item">
+              <mat-form-field appearance="standard">
+                <mat-select [(value)]="lang" (selectionChange)="switchLanguage($event)">
+                  <mat-option></mat-option>
+                  <mat-option value="tr">Türkçe</mat-option>
+                  <mat-option value="en">English</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </li>
+    </ul>
+  </div>
+</nav>
+  <div class="content">
+      <router-outlet></router-outlet>
+  </div>
+  <!-- Footer -->
+  <footer style="max-height: 120px ; padding-top: 10px">
+    <div class="container-fluid">
+      <div class="" style="display: flex;">
+        <!-- Copyright -->
+        <div class="footer--text text-center">
+          <div >ENGLISH GURU LLC. <i class='bx bx-copyright'></i> 2021 | All rights reserved.
+            <br>
+            <ul>
+              <li><a class="link" href="/privacy"  target='_blank'>  {{ 'privacy' | translate }}</a></li>
+              <li><a class="link" href="/terms"  target='_blank'>  {{ 'terms' | translate }}</a></li>
+              <i class="fa fa-envelope  mx-2"></i><a  class="link" href="mailto:support@englishguru.tv">support@englishguru.tv</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>

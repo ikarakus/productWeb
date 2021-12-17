@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <h1 mat-dialog-title>
+      {{title}}
+    </h1>
+  </div>
+  <div class="row">
+    <div class="text-center font-weight-bold h5 text-wrap"  style="max-width: 18rem;" mat-dialog-content>
+      <p>{{message}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <button class="btn btn-success" (click)="onConfirm()">{{ yes }}</button>
+    </div>
+    <div class="col-6">
+      <button class="btn btn-secondary" (click)="onDismiss()">{{ no }}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,182 @@
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  width: 36px;
+  font-size: 24px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  top: -10px;
+}
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+    margin: 2px auto 4px auto;
+    top: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+.navbar{
+  background: #ff1949;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+.content {
+margin-top: 150px ;
+}
+
+.star {
+  display: inline-block;
+}
+
+.starCount {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align:top;
+  margin-left: 15px;
+}
+
+ul li {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+ul {
+  padding-right: 30px;
+}
+
+.link { color:  #ffffff; }
+
+.footer--time{
+  width: 30%;
+  font-size: 1.4rem;
+  @media only screen and (min-width: 1200px) {
+    width: 15%;
+  }
+      display: none;
+}
+
+.footer--time.show{
+  display: block;
+  @media only screen and (max-width: 576px) {
+    display: none;
+  }
+
+}
+
+.footer--text {
+  width: 100%;
+  font-size: 1rem;
+}
+
+  .footer--text.small {
+    width: 70%;
+    @media only screen and (min-width: 1200px) {
+     width: 85%;
+    }
+    @media only screen and (max-width: 576px) {
+     width: 100%;
+    }
+  }
+
+  .nav-star{
+    min-width: 150px;
+    max-height: 100px;
+  }
+
+.nav-become {
+  color: #000000 !important;
+
+}

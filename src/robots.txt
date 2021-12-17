@@ -1,0 +1,6 @@
+User-agent: *
+Allow:/
+Disallow: /assets/
+Allow: /assets/i18n/
+Allow: /assets/js/
+Sitemap: https://tutor.englishguru.tv/sitemap.xml

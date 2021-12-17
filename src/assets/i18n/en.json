@@ -1,0 +1,13 @@
+{
+  "logout": "Log Out",
+  "signup": "Sign Up",
+  "yes": "yes",
+  "no": "no",
+  "file_size": "file size must be less than or equal to 20MB!",
+  "file_type": "load word or pdf files!",
+  "terms": "Terms of Service",
+  "privacy": "Privacy Policy",
+  "product": {
+    "title": "Products"
+  }
+}

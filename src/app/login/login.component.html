@@ -1,0 +1,23 @@
+<!-- Start Login Area -->
+<div class="container">
+    <div class="row m-0">
+      <div class="col-md-12 p-0" style="margin-bottom: 50px">
+        <div class="login-content">
+          <div class="login-form">
+            <amplify-authenticator usernameAlias="email">
+              <amplify-sign-up
+                slot="sign-up"
+                usernameAlias="email"
+              ></amplify-sign-up>
+              <amplify-sign-in
+                slot="sign-in"
+                usernameAlias="email"
+                [formFields]="signInFields"
+              ></amplify-sign-in>
+            </amplify-authenticator>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End Login Area -->
