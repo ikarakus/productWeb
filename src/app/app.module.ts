@@ -14,12 +14,14 @@ import {NgxSpinnerModule, NgxSpinnerService} from 'ngx-spinner';
 import {AmplifyUIAngularModule} from '@aws-amplify/ui-angular';
 import {RatingModule} from 'ng-starrating';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {DebounceClickDirective} from './debounce-click.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    DebounceClickDirective
   ],
     imports: [
         AmplifyUIAngularModule,
