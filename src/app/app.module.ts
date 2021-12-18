@@ -11,7 +11,6 @@ import {ErrorInterceptor} from './interceptor/error.interceptor';
 import {LoginComponent} from './login/login.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {NgxSpinnerModule, NgxSpinnerService} from 'ngx-spinner';
-import {CountdownGlobalConfig, CountdownModule} from 'ngx-countdown';
 import {AmplifyUIAngularModule} from '@aws-amplify/ui-angular';
 import {RatingModule} from 'ng-starrating';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -42,14 +41,10 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
             },
             isolate: true
         }),
-        CountdownModule,
         RatingModule
     ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
-    {
-      provide: CountdownGlobalConfig
-    },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,
