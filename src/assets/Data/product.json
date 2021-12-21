@@ -1,0 +1,47 @@
+{ "products" : [
+  { "id": 1001,
+    "name": "Cheese",
+    "price" : "2.50",
+    "rating": "3.2",
+    "thumbnail":
+        {
+          "url": "images/thumbnails/1001.jpg",
+          "width": 32,
+          "height": 32
+        }
+  },
+  { "id": 1002,
+    "name": "Crisps",
+    "price" : "3",
+    "rating": "4.5",
+    "thumbnail":
+        {
+          "url": "images/thumbnails/1002.jpg",
+          "width": 32,
+          "height": 32
+        }
+  },
+  { "id": 1003,
+    "name": "Pizza",
+    "price" : "4",
+    "rating": "3",
+    "thumbnail":
+        {
+          "url": "images/thumbnails/1003.jpg",
+          "width": 32,
+          "height": 32
+        }
+  },
+  { "id": 1004,
+    "name": "Chocolate",
+    "price" : "1.50",
+    "rating": "5",
+    "thumbnail":
+        {
+          "url": "images/thumbnails/1004.jpg",
+          "width": 32,
+          "height": 32
+        }
+  }
+ ]
+}
