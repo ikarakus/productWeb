@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router) {
     this.signInFields = [
       {
-        type: 'email',
+        type: 'username',
   //      value:'ikarakus@gmail.com'
       },
       {

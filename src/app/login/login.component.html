@@ -4,14 +4,14 @@
       <div class="col-md-12 p-0" style="margin-bottom: 50px">
         <div class="login-content">
           <div class="login-form">
-            <amplify-authenticator usernameAlias="email">
+            <amplify-authenticator usernameAlias="username">
               <amplify-sign-up
                 slot="sign-up"
-                usernameAlias="email"
+                usernameAlias="username"
               ></amplify-sign-up>
               <amplify-sign-in
                 slot="sign-in"
-                usernameAlias="email"
+                usernameAlias="username"
                 [formFields]="signInFields"
               ></amplify-sign-in>
             </amplify-authenticator>
