@@ -5,9 +5,9 @@
     "rating": "3.2",
     "thumbnail_url": "images/thumbnails/1001.jpg",
     "detail" : {
-        "description" : "Cheese Desc",
+        "desc" : "Cheese Desc",
         "price" : "2.50$",
-        "arrivalDate": "12.09.2021",
+        "arrival_date": "12.09.2021",
         "numberOfComments": "3",
         "image_url": "images/1001.jpg"
       }
@@ -18,9 +18,9 @@
     "rating": "4.5",
     "thumbnail_url": "images/thumbnails/1002.jpg",
     "detail" : {
-      "description" : "Crisps Desc",
+      "desc" : "Crisps Desc",
       "price" : "3$",
-      "arrivalDate": "12.10.2021",
+      "arrival_date": "12.10.2021",
       "numberOfComments": "3",
       "image_url": "images/1002.jpg"
     }
@@ -31,9 +31,9 @@
     "rating": "3",
     "thumbnail_url": "images/thumbnails/1003.jpg",
     "detail" : {
-      "description" : "Pizza Desc",
+      "desc" : "Pizza Desc",
       "price" : "4$",
-      "arrivalDate": "12.11.2021",
+      "arrival_date": "12.11.2021",
       "numberOfComments": "3",
       "image_url": "images/1003.jpg"
     }
@@ -44,9 +44,9 @@
     "rating": "5",
     "thumbnail_url": "images/thumbnails/1004.jpg",
     "detail" : {
-      "description" : "Chocolate Desc",
+      "desc" : "Chocolate Desc",
       "price" : "1.50$",
-      "arrivalDate": "12.12.2021",
+      "arrival_date": "12.12.2021",
       "numberOfComments": "3",
       "image_url": "images/1004.jpg"
     }
