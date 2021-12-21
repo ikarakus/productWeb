@@ -1,5 +1,5 @@
 { "products" : [
-  {"id": 1001,
+  { "id": 1001,
     "name": "Cheese",
     "price" : "2.50",
     "rating": "3.2",
