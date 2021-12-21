@@ -1,47 +1,55 @@
 { "products" : [
-  { "id": 1001,
+  {"id": 1001,
     "name": "Cheese",
     "price" : "2.50",
     "rating": "3.2",
-    "thumbnail":
-        {
-          "url": "images/thumbnails/1001.jpg",
-          "width": 32,
-          "height": 32
-        }
+    "thumbnail_url": "images/thumbnails/1001.jpg",
+    "detail" : {
+        "description" : "Cheese Desc",
+        "price" : "2.50$",
+        "arrivalDate": "12.09.2021",
+        "numberOfComments": "3",
+        "image_url": "images/1001.jpg"
+      }
   },
   { "id": 1002,
     "name": "Crisps",
     "price" : "3",
     "rating": "4.5",
-    "thumbnail":
-        {
-          "url": "images/thumbnails/1002.jpg",
-          "width": 32,
-          "height": 32
-        }
+    "thumbnail_url": "images/thumbnails/1002.jpg",
+    "detail" : {
+      "description" : "Crisps Desc",
+      "price" : "3$",
+      "arrivalDate": "12.10.2021",
+      "numberOfComments": "3",
+      "image_url": "images/1002.jpg"
+    }
   },
   { "id": 1003,
     "name": "Pizza",
     "price" : "4",
     "rating": "3",
-    "thumbnail":
-        {
-          "url": "images/thumbnails/1003.jpg",
-          "width": 32,
-          "height": 32
-        }
+    "thumbnail_url": "images/thumbnails/1003.jpg",
+    "detail" : {
+      "description" : "Pizza Desc",
+      "price" : "4$",
+      "arrivalDate": "12.11.2021",
+      "numberOfComments": "3",
+      "image_url": "images/1003.jpg"
+    }
   },
   { "id": 1004,
     "name": "Chocolate",
     "price" : "1.50",
     "rating": "5",
-    "thumbnail":
-        {
-          "url": "images/thumbnails/1004.jpg",
-          "width": 32,
-          "height": 32
-        }
+    "thumbnail_url": "images/thumbnails/1004.jpg",
+    "detail" : {
+      "description" : "Chocolate Desc",
+      "price" : "1.50$",
+      "arrivalDate": "12.12.2021",
+      "numberOfComments": "3",
+      "image_url": "images/1004.jpg"
+    }
   }
  ]
 }
