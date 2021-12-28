@@ -1,1 +1,9 @@
-<p>product-list works!</p>
+<div class="container">
+<ng-container *ngIf="productModel$ | async as resolved">
+<ul>
+  <li *ngFor="let product of resolved.products">
+    {{ product.name}}
+  </li>
+</ul>
+</ng-container>
+</div>
