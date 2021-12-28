@@ -1,54 +1,54 @@
 { "products" : [
   { "id": 1001,
-    "name": "Cheese",
-    "price" : "2.50",
-    "rating": "3.2",
-    "thumbnail_url": "images/thumbnails/1001.jpg",
+    "name": "BMW",
+    "price" : "25000",
+    "rating": "4.8",
+    "thumbnail_url": "images/thumbnails/bmw.gif",
     "detail" : {
-        "desc" : "Cheese Desc",
-        "price" : "2.50$",
-        "arrival_date": "12.09.2021",
-        "numberOfComments": "3",
-        "image_url": "images/1001.jpg"
+        "desc" : "The corporate headquarters and parent plant of the BMW Group are still located at the former BFW site in Milbertshofen, Munich to this day.",
+        "price" : "25000$",
+        "arrival_date": "12.09.2022",
+        "numberOfComments": "2",
+        "image_url": "images/bmw.png"
       }
   },
   { "id": 1002,
-    "name": "Crisps",
-    "price" : "3",
+    "name": "Mercedes",
+    "price" : "35000",
     "rating": "4.5",
-    "thumbnail_url": "images/thumbnails/1002.jpg",
+    "thumbnail_url": "images/thumbnails/mercedes.gif",
     "detail" : {
-      "desc" : "Crisps Desc",
-      "price" : "3$",
-      "arrival_date": "12.10.2021",
+      "desc" : " Mercedes-Benz and subsidiary Mercedes-Benz AG – of Daimler AG – are headquartered in Stuttgart, Baden-Württemberg, Germany",
+      "price" : "35000$",
+      "arrival_date": "12.10.2022",
       "numberOfComments": "3",
-      "image_url": "images/1002.jpg"
+      "image_url": "images/mercedes.jpg"
     }
   },
   { "id": 1003,
-    "name": "Pizza",
-    "price" : "4",
-    "rating": "3",
-    "thumbnail_url": "images/thumbnails/1003.jpg",
+    "name": "Tesla",
+    "price" : "60000",
+    "rating": "5",
+    "thumbnail_url": "images/thumbnails/tesla.gif",
     "detail" : {
-      "desc" : "Pizza Desc",
-      "price" : "4$",
-      "arrival_date": "12.11.2021",
-      "numberOfComments": "3",
-      "image_url": "images/1003.jpg"
+      "desc" : "Tesla, Inc. is an American electric vehicle and clean energy company based in Austin, Texas, United States. ",
+      "price" : "60000$",
+      "arrival_date": "12.11.2022",
+      "numberOfComments": "4",
+      "image_url": "images/tesla.png"
     }
   },
   { "id": 1004,
-    "name": "Chocolate",
-    "price" : "1.50",
+    "name": "Ferrari",
+    "price" : "50000",
     "rating": "5",
-    "thumbnail_url": "images/thumbnails/1004.jpg",
+    "thumbnail_url": "images/thumbnails/ferrari.gif",
     "detail" : {
-      "desc" : "Chocolate Desc",
-      "price" : "1.50$",
-      "arrival_date": "12.12.2021",
-      "numberOfComments": "3",
-      "image_url": "images/1004.jpg"
+      "desc" : "The headquarters of the company is based in Via Abetone Inferiore, 4. The name of the place is Maranello MO, while the country name if Italy",
+      "price" : "50000$",
+      "arrival_date": "12.12.2022",
+      "numberOfComments": "5",
+      "image_url": "images/ferrari.png"
     }
   }
  ]
