@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductService} from '../product.service';
 import {Observable} from 'rxjs';
-import {ProductModel} from '../../model/productModel';
 import {UtilsGeneral} from '../../utils/UtilsGeneral';
 import {Product} from '../../model/product';
 
@@ -12,12 +11,12 @@ import {Product} from '../../model/product';
 })
 export class ProductListComponent implements OnInit {
 
-  productModel$:Observable<ProductModel>;
-  public s3Url: string;
+  productList$:Observable<Product[]>;
+
   constructor(private service:ProductService) { }
 
   ngOnInit() {
-    this.productModel$ = this.service.getProducts();
+    this.productList$ = this.service.getProducts();
   }
 
   setProduct(product:Product) {

@@ -59,9 +59,7 @@ export class LoginComponent implements OnInit {
       .then(user => {
         if (user) {
           UtilsGeneral.setUser(user.attributes);
-          this.router.navigate(['/product']).then(() => {
-            window.location.reload();
-          });
+          window.location.href='/product';
         }
       });
   }

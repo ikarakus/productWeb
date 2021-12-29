@@ -5,7 +5,7 @@
     </ul>
   </div>
 
-  <div class="myAccount-content" *ngIf="productModel$ | async as resolved">
+  <div class="myAccount-content">
     <div class="orders-table table-responsive">
       <table class="table">
         <thead>
@@ -19,7 +19,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let product of resolved.products">
+        <tr *ngFor="let product of productList$ | async">
           <td>{{product.id}}</td>
           <td>{{product.name}}</td>
           <td>{{product.price | number: '1.2-2'}}</td>
