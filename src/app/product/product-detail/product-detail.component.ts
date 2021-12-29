@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {ProductDetail} from '../../model/productDetail';
-import {map} from 'rxjs/operators';
-import {Observable} from 'rxjs';
+import {Product} from '../../model/product';
+import {UtilsGeneral} from '../../utils/UtilsGeneral';
 
 
 @Component({
@@ -12,16 +10,11 @@ import {Observable} from 'rxjs';
 })
 export class ProductDetailComponent implements OnInit {
 
-  public productDet$: Observable<ProductDetail>;
-  public productDet: ProductDetail;
-  constructor(public activatedRoute: ActivatedRoute) { }
-
-  ngOnInit() {
-    this.productDet$ = this.activatedRoute.paramMap
-      .pipe(map(() => window.history.state));
-    this.productDet$.subscribe((res:any)=> {
-      this.productDet = res.detail;
-    });
+  public product: Product;
+  constructor() {
+    this.product =UtilsGeneral.getProduct();
   }
+
+  ngOnInit() {}
 
 }

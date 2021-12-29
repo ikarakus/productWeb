@@ -30,7 +30,7 @@
           <td>
             <img src="{{product.thumbnail_url}}" alt="product_logo" width="32" height="32">
           </td>
-          <td><a routerLink="product-detail" [state]="{detail: product.detail}" class="view-button">{{'product.detail' | translate}}</a></td>
+          <td><a routerLink="detail" (click)="setProduct(product)" class="view-button">{{'product.detail' | translate}}</a></td>
         </tr>
         </tbody>
       </table>

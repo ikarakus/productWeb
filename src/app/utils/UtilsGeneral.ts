@@ -1,27 +1,36 @@
 import {User} from '../model/user';
+import {Product} from '../model/product';
 
 export class UtilsGeneral {
 
   static getLang(): string {
-      return localStorage.getItem( 'english-guru.user.lang');
+      return localStorage.getItem( 'crea-test.product');
   }
 
   static setLang(lang: string) {
-    localStorage.setItem( 'english-guru.user.lang', lang);
+    localStorage.setItem( 'crea-test.lang', lang);
   }
 
 
   static removeLogin() {
-    localStorage.removeItem( 'english-guru.user');
+    localStorage.removeItem( 'crea-test.user');
   }
 
 
   static getUser(): User {
-    return JSON.parse(localStorage.getItem('english-guru.user'));
+    return JSON.parse(localStorage.getItem('crea-test.user'));
   }
 
   static setUser(user: User) {
-    localStorage.setItem( 'english-guru.user', JSON.stringify(user));
+    localStorage.setItem( 'crea-test.user', JSON.stringify(user));
+  }
+
+  static getProduct(): Product {
+    return JSON.parse(sessionStorage.getItem( 'crea-test.product'));
+  }
+
+  static setProduct(product: Product) {
+    sessionStorage.setItem( 'crea-test.product', JSON.stringify(product));
   }
 
 

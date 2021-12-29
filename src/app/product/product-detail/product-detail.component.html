@@ -9,32 +9,24 @@
   <div class="row align-items-center">
     <div class="col-lg-5 col-md-12">
       <div class="products-details-image">
-        <img src="{{productDet.image_url}}" alt="image">
+        <img src="{{product.detail.image_url}}" alt="image">
       </div>
     </div>
 
     <div class="col-lg-7 col-md-12">
       <div class="product-details-desc">
-        <h3>Book Chicks</h3>
-
+        <h3>{{product.name}}</h3>
         <div class="price">
-          <span class="new-price">$541.00</span>
-          <span class="old-price">$652.00</span>
+          <span class="new-price">{{product.price | number: '1.2-2'}} {{product.detail.currency}}</span>
         </div>
-
         <div class="product-review">
-          <div class="rating">
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star-half'></i>
-          </div>
-
-          <a href="#" class="rating-count">3 reviews</a>
+          <star-rating value="{{product.rating}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" ></star-rating>
+          <a href="#" class="rating-count"> {{product.detail.numberOfComments}} reviews</a>
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+        <p>
+          {{product.detail.desc}}
+        </p>
 
       </div>
     </div>

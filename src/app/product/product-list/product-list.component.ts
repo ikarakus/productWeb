@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {ProductService} from '../product.service';
 import {Observable} from 'rxjs';
 import {ProductModel} from '../../model/productModel';
+import {UtilsGeneral} from '../../utils/UtilsGeneral';
+import {Product} from '../../model/product';
 
 @Component({
   selector: 'app-product-list',
@@ -18,4 +20,7 @@ export class ProductListComponent implements OnInit {
     this.productModel$ = this.service.getProducts();
   }
 
+  setProduct(product:Product) {
+    UtilsGeneral.setProduct(product);
+  }
 }
