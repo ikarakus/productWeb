@@ -9,7 +9,7 @@
         "price" : "25000$",
         "arrival_date": "12.09.2022",
         "numberOfComments": "2",
-        "image_url": "images/bmw.png"
+        "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/bmw.png"
       }
   },
   { "id": 1002,
@@ -22,7 +22,7 @@
       "price" : "35000$",
       "arrival_date": "12.10.2022",
       "numberOfComments": "3",
-      "image_url": "images/mercedes.jpg"
+      "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/mercedes.jpg"
     }
   },
   { "id": 1003,
@@ -35,7 +35,7 @@
       "price" : "60000$",
       "arrival_date": "12.11.2022",
       "numberOfComments": "4",
-      "image_url": "images/tesla.png"
+      "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/tesla.png"
     }
   },
   { "id": 1004,
@@ -48,7 +48,7 @@
       "price" : "50000$",
       "arrival_date": "12.12.2022",
       "numberOfComments": "5",
-      "image_url": "images/ferrari.png"
+      "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/ferrari.png"
     }
   }
  ]

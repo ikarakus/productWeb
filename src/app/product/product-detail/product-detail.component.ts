@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {ProductDetail} from '../../model/productDetail';
+import {map} from 'rxjs/operators';
+import {Observable} from 'rxjs';
+
 
 @Component({
   selector: 'app-product-detail',
@@ -7,9 +12,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() { }
+  public productDet$: Observable<ProductDetail>;
+  public productDet: ProductDetail;
+  constructor(public activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.productDet$ = this.activatedRoute.paramMap
+      .pipe(map(() => window.history.state));
+    this.productDet$.subscribe((res:any)=> {
+      this.productDet = res.detail;
+    });
   }
 
 }
