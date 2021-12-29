@@ -13,6 +13,7 @@
     "price": "Fiyatı",
     "rating": "Derecesi",
     "image": "Fotograf",
-    "detail": "Detay"
+    "detail": "Detay",
+    "arrival_date": "Geliş Tarihi"
   }
 }

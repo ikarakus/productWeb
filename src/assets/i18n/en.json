@@ -13,6 +13,7 @@
     "price": "Price",
     "rating": "Rating",
     "image": "Image",
-    "detail": "Detail"
+    "detail": "Detail",
+    "arrival_date": "Arrival Date"
   }
 }

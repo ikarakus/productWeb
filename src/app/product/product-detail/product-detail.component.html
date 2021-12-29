@@ -19,9 +19,11 @@
         <div class="price">
           <span class="new-price">{{product.price | number: '1.2-2'}} {{product.detail.currency}}</span>
         </div>
+        <h6 style="display: inline-block">{{'product.arrival_date' | translate}}</h6>
+        <span> {{product.detail.arrival_date | date: 'dd.MM.yyyy'}}</span>
         <div class="product-review">
           <star-rating value="{{product.rating}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" ></star-rating>
-          <a href="#" class="rating-count"> {{product.detail.numberOfComments}} reviews</a>
+          <a  href="javascript:void(0)" class="rating-count"> {{product.detail.numberOfComments}} reviews</a>
         </div>
 
         <p>
