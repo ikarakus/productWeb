@@ -1,9 +1,36 @@
 <div class="container">
-<ng-container *ngIf="productModel$ | async as resolved">
-<ul>
-  <li *ngFor="let product of resolved.products">
-    {{ product.name}}
-  </li>
-</ul>
-</ng-container>
+  <div class="myAccount-navigation">
+    <ul>
+      <li><a class="active"><i class='bx bx-list-ul'></i>{{'product.title' | translate}}</a></li>
+    </ul>
+  </div>
+
+  <div class="myAccount-content" *ngIf="productModel$ | async as resolved">
+    <div class="orders-table table-responsive">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>{{'product.id' | translate}}</th>
+          <th>{{'product.name' | translate}}</th>
+          <th>{{'product.price' | translate}}</th>
+          <th>{{'product.rating' | translate}}</th>
+          <th>{{'product.image' | translate}}</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of resolved.products">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price | number: '1.2-2'}}</td>
+          <td>{{product.rating}}</td>
+          <td>
+            <img src="{{product.thumbnail_url}}" alt="guru_logo" width="32" height="32">
+          </td>
+          <td><a href="#" class="view-button">{{'product.detail' | translate}}</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>

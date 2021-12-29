@@ -7,6 +7,12 @@
   "privacy": "Gizlilik Sözleşmesi",
   "copyright": "2021 | Tüm hakları saklıdır.",
   "product": {
-    "title": "Ürünler"
+    "title": "Ürünler",
+    "id": "Ürün No",
+    "name": "Adı",
+    "price": "Fiyatı",
+    "rating": "Derecesi",
+    "image": "Fotograf",
+    "detail": "Detay"
   }
 }

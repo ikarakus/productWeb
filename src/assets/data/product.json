@@ -3,7 +3,7 @@
     "name": "BMW",
     "price" : "25000",
     "rating": "4.8",
-    "thumbnail_url": "images/thumbnails/bmw.gif",
+    "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/bmw.gif",
     "detail" : {
         "desc" : "The corporate headquarters and parent plant of the BMW Group are still located at the former BFW site in Milbertshofen, Munich to this day.",
         "price" : "25000$",
@@ -16,7 +16,7 @@
     "name": "Mercedes",
     "price" : "35000",
     "rating": "4.5",
-    "thumbnail_url": "images/thumbnails/mercedes.gif",
+    "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/mercedes.gif",
     "detail" : {
       "desc" : " Mercedes-Benz and subsidiary Mercedes-Benz AG – of Daimler AG – are headquartered in Stuttgart, Baden-Württemberg, Germany",
       "price" : "35000$",
@@ -29,7 +29,7 @@
     "name": "Tesla",
     "price" : "60000",
     "rating": "5",
-    "thumbnail_url": "images/thumbnails/tesla.gif",
+    "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/tesla.gif",
     "detail" : {
       "desc" : "Tesla, Inc. is an American electric vehicle and clean energy company based in Austin, Texas, United States. ",
       "price" : "60000$",
@@ -42,7 +42,7 @@
     "name": "Ferrari",
     "price" : "50000",
     "rating": "5",
-    "thumbnail_url": "images/thumbnails/ferrari.gif",
+    "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/ferrari.gif",
     "detail" : {
       "desc" : "The headquarters of the company is based in Via Abetone Inferiore, 4. The name of the place is Maranello MO, while the country name if Italy",
       "price" : "50000$",

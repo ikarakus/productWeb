@@ -11,7 +11,7 @@ import {ProductModel} from '../../model/productModel';
 export class ProductListComponent implements OnInit {
 
   productModel$:Observable<ProductModel>;
-
+  public s3Url: string;
   constructor(private service:ProductService) { }
 
   ngOnInit() {

@@ -7,6 +7,12 @@
   "privacy": "Privacy Policy",
   "copyright": "2021 | All rights reserved.",
   "product": {
-    "title": "Products"
+    "title": "Products",
+       "id": "Product No",
+     "name": "Name",
+    "price": "Price",
+    "rating": "Rating",
+    "image": "Image",
+    "detail": "Detail"
   }
 }
