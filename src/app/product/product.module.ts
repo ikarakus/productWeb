@@ -5,14 +5,16 @@ import { ProductRoutingModule } from './product-routing.module';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {TranslateModule} from '@ngx-translate/core';
+import {RatingModule} from 'ng-starrating';
 
 
 @NgModule({
   declarations: [ProductListComponent, ProductDetailComponent],
-  imports: [
-    CommonModule,
-    ProductRoutingModule,
-    TranslateModule,
-  ]
+    imports: [
+        CommonModule,
+        ProductRoutingModule,
+        TranslateModule,
+        RatingModule,
+    ]
 })
 export class ProductModule { }

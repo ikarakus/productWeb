@@ -2,7 +2,7 @@
   { "id": 1001,
     "name": "BMW",
     "price" : "25000",
-    "rating": "4.8",
+    "rating": "3",
     "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/bmw.gif",
     "detail" : {
         "desc" : "The corporate headquarters and parent plant of the BMW Group are still located at the former BFW site in Milbertshofen, Munich to this day.",
@@ -15,7 +15,7 @@
   { "id": 1002,
     "name": "Mercedes",
     "price" : "35000",
-    "rating": "4.5",
+    "rating": "4",
     "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/mercedes.gif",
     "detail" : {
       "desc" : " Mercedes-Benz and subsidiary Mercedes-Benz AG – of Daimler AG – are headquartered in Stuttgart, Baden-Württemberg, Germany",
@@ -28,7 +28,7 @@
   { "id": 1003,
     "name": "Tesla",
     "price" : "60000",
-    "rating": "5",
+    "rating": "4.5",
     "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/tesla.gif",
     "detail" : {
       "desc" : "Tesla, Inc. is an American electric vehicle and clean energy company based in Austin, Texas, United States. ",
