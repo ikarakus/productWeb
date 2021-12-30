@@ -4,8 +4,6 @@ import {AppComponent} from './app.component';
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastrModule} from 'ngx-toastr';
-import {MaterialModule} from './app-material/material.module';
-import {ConfirmDialogComponent} from './confirm-dialog/confirm-dialog.component';
 import {TokenInterceptor} from './interceptor/token.interceptor';
 import {ErrorInterceptor} from './interceptor/error.interceptor';
 import {LoginComponent} from './login/login.component';
@@ -15,36 +13,37 @@ import {AmplifyUIAngularModule} from '@aws-amplify/ui-angular';
 import {RatingModule} from 'ng-starrating';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {DebounceClickDirective} from './debounce-click.directive';
+import {MatOptionModule, MatSelectModule} from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ConfirmDialogComponent,
     DebounceClickDirective
   ],
-    imports: [
-        AmplifyUIAngularModule,
-        AppRoutingModule,
-        HttpClientModule,
-        BrowserAnimationsModule,
-        MaterialModule,
-        NgxSpinnerModule,
-        ToastrModule.forRoot({
-            timeOut: 10000,
-            positionClass: 'toast-bottom-center',
-            preventDuplicates: true
-        }),
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: createTranslateLoader,
-                deps: [HttpClient]
-            },
-            isolate: true
-        }),
-        RatingModule
-    ],
+  imports: [
+    AmplifyUIAngularModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-center',
+      preventDuplicates: true
+    }),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      },
+      isolate: true
+    }),
+    RatingModule,
+    MatOptionModule,
+    MatSelectModule
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     {
@@ -59,7 +58,6 @@ import {DebounceClickDirective} from './debounce-click.directive';
     },
     NgxSpinnerService
   ],
-  entryComponents: [ConfirmDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {
