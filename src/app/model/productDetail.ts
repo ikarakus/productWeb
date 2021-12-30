@@ -4,4 +4,5 @@ export interface ProductDetail {
   arrival_date: Date;
   numberOfComments: string;
   image_url: string;
+  additional_info: string;
 }
