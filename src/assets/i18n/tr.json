@@ -14,6 +14,9 @@
     "rating": "Derecesi",
     "image": "Fotograf",
     "detail": "Detay",
-    "arrival_date": "Geliş Tarihi"
+    "arrival_date": "Geliş Tarihi",
+    "reviews": "Yorumlar",
+    "customer_reviews": "Müşteri Yorumları",
+    "additional": "Ek Bilgi"
   }
 }

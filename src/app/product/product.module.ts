@@ -6,10 +6,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {RatingModule} from 'ng-starrating';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 @NgModule({
-  declarations: [ProductListComponent, ProductDetailComponent],
+  declarations: [ProductListComponent, ProductDetailComponent, ReviewsComponent],
     imports: [
         CommonModule,
         ProductRoutingModule,

@@ -14,6 +14,9 @@
     "rating": "Rating",
     "image": "Image",
     "detail": "Detail",
-    "arrival_date": "Arrival Date"
+    "arrival_date": "Arrival Date",
+    "reviews": "Reviews",
+    "customer_reviews": "Customer Reviews",
+    "additional": "Additional Information"
   }
 }
