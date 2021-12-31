@@ -16,6 +16,7 @@
     "detail": "Detail",
     "arrival_date": "Arrival Date",
     "reviews": "Reviews",
+    "reviews_small": "reviews",
     "customer_reviews": "Customer Reviews",
     "additional": "Additional Information"
   }
