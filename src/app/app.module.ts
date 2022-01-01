@@ -8,7 +8,6 @@ import {TokenInterceptor} from './interceptor/token.interceptor';
 import {ErrorInterceptor} from './interceptor/error.interceptor';
 import {LoginComponent} from './login/login.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {NgxSpinnerModule, NgxSpinnerService} from 'ngx-spinner';
 import {AmplifyUIAngularModule} from '@aws-amplify/ui-angular';
 import {RatingModule} from 'ng-starrating';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -24,7 +23,6 @@ import {MatOptionModule, MatSelectModule} from '@angular/material';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgxSpinnerModule,
     ToastrModule.forRoot({
       timeOut: 10000,
       positionClass: 'toast-bottom-center',
@@ -53,8 +51,7 @@ import {MatOptionModule, MatSelectModule} from '@angular/material';
       provide: HTTP_INTERCEPTORS,
       useClass: ErrorInterceptor,
       multi: true
-    },
-    NgxSpinnerService
+    }
   ],
   bootstrap: [AppComponent]
 })
