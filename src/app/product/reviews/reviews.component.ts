@@ -1,10 +1,11 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {Product} from '../../model/product';
 import {Review} from '../../model/review';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {UtilsGeneral} from '../../utils/UtilsGeneral';
 import {ToastrService} from 'ngx-toastr';
 import {TranslateService} from '@ngx-translate/core';
+import {StarRatingComponent} from 'ng-starrating';
 
 @Component({
   selector: 'app-reviews',
@@ -17,6 +18,7 @@ export class ReviewsComponent implements OnInit {
   public review: Review;
   public reviewList: Review[];
   reviewForm: FormGroup;
+  @ViewChild('rating',{static : false}) rating: StarRatingComponent;
   constructor(private toastr: ToastrService, public translate: TranslateService) {
     this.reviewList = UtilsGeneral.getReviewList();
     if (!this.reviewList) {
@@ -49,10 +51,11 @@ export class ReviewsComponent implements OnInit {
     this.review.productId = this.product.id;
     this.review.comment = this.reviewForm.controls['comment'].value;
     this.review.rate = this.reviewForm.controls['rate'].value;
-    if (this.reviewForm.valid) {
+    if (this.review.comment && this.review.rate > 0) {
       this.reviewList.push(this.review);
       UtilsGeneral.setReviewList(this.reviewList);
       this.reviewForm.reset();
+      this.rating.value = 0;
       this.toastr.warning(this.translate.instant('product.saved'));
     } else {
         this.toastr.warning(this.translate.instant('product.rating_warn'));
