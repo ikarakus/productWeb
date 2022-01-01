@@ -8,6 +8,7 @@ import {TranslateModule} from '@ngx-translate/core';
 import {RatingModule} from 'ng-starrating';
 import { ReviewsComponent } from './reviews/reviews.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {OrderModule} from 'ngx-order-pipe';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {ReactiveFormsModule} from '@angular/forms';
         TranslateModule,
         RatingModule,
         ReactiveFormsModule,
+        OrderModule
     ]
 })
 export class ProductModule { }

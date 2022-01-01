@@ -8,7 +8,7 @@
 
   <div class="review-comments">
     <ul>
-      <li *ngFor="let item of reviewList"  style="list-style-type:none;">
+      <li *ngFor="let item of reviewList | orderBy: 'reviewDate':true"  style="list-style-type:none;">
         <div class="review-item">
           <p>{{item.reviewDate | date: 'dd/MM/yyyy h:mm a'}}</p>
           <p><star-rating value="{{item.rate}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" size="25px" readonly="true"></star-rating></p>
