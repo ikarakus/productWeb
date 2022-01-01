@@ -52,6 +52,7 @@ export class ReviewsComponent implements OnInit {
     if (this.reviewForm.valid) {
       this.reviewList.push(this.review);
       UtilsGeneral.setReviewList(this.reviewList);
+      this.reviewForm.reset();
       this.toastr.warning(this.translate.instant('product.saved'));
     } else {
         this.toastr.warning(this.translate.instant('product.rating_warn'));

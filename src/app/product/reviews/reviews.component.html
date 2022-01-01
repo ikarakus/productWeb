@@ -7,10 +7,10 @@
   </div>
 
   <div class="review-comments">
-    <ul *ngFor="let item of reviewList"  style="list-style-type:none;">
-      <li>
+    <ul>
+      <li *ngFor="let item of reviewList"  style="list-style-type:none;">
         <div class="review-item">
-          <p>{{item.reviewDate | date: 'dd.MM.yyyy'}}</p>
+          <p>{{item.reviewDate | date: 'dd/MM/yyyy h:mm a'}}</p>
           <p><star-rating value="{{item.rate}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" size="25px" readonly="true"></star-rating></p>
           <p>{{item.comment}}</p>
         </div>
