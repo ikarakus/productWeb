@@ -18,6 +18,11 @@
     "reviews": "Yorumlar",
     "reviews_small": "yorumlar",
     "customer_reviews": "Müşteri Yorumları",
-    "additional": "Ek Bilgi"
+    "additional": "Ek Bilgi",
+    "rating_warn": "Lütfen ürünü yıldızla ve yorumunuzla değerlendirin!",
+    "write": "Bir Yorum Yazın",
+    "write_desc": "Yorumunuzu buraya yazın",
+    "submit": "Gönder",
+    "saved": "Yorumunuz başarıyla kaydedildi!"
   }
 }

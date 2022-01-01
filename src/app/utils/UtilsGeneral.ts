@@ -1,5 +1,6 @@
 import {User} from '../model/user';
 import {Product} from '../model/product';
+import {Review} from '../model/review';
 
 export class UtilsGeneral {
 
@@ -31,6 +32,14 @@ export class UtilsGeneral {
 
   static setProduct(product: Product) {
     sessionStorage.setItem( 'crea-test.product', JSON.stringify(product));
+  }
+
+  static getReviewList(): Review[] {
+    return JSON.parse(localStorage.getItem('crea-test.reviews'));
+  }
+
+  static setReviewList(reviews: Review[]) {
+    localStorage.setItem( 'crea-test.reviews', JSON.stringify(reviews));
   }
 
 

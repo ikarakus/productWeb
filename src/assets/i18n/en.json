@@ -18,6 +18,11 @@
     "reviews": "Reviews",
     "reviews_small": "reviews",
     "customer_reviews": "Customer Reviews",
-    "additional": "Additional Information"
+    "additional": "Additional Information",
+    "rating_warn": "Please rate the product using star and your comment!",
+    "write": "Write a Review",
+    "write_desc": "Write your comments here",
+    "submit": "Submit",
+    "saved": "Your comment is successfully saved!"
   }
 }

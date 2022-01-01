@@ -7,6 +7,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import {TranslateModule} from '@ngx-translate/core';
 import {RatingModule} from 'ng-starrating';
 import { ReviewsComponent } from './reviews/reviews.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
         ProductRoutingModule,
         TranslateModule,
         RatingModule,
+        ReactiveFormsModule,
     ]
 })
 export class ProductModule { }
