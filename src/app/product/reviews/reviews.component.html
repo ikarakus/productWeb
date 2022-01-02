@@ -5,7 +5,7 @@
       <li *ngFor="let item of reviewList | orderBy: 'reviewDate':true"  style="list-style-type:none;">
         <div class="review-item">
           <p>{{item.reviewDate | date: 'dd/MM/yyyy h:mm a'}}</p>
-          <p><star-rating value="{{item.rate}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" size="25px" readonly="true"></star-rating></p>
+          <p><star-rating value="{{item.rate}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" size="24px" readonly="true"></star-rating></p>
           <p>{{item.comment}}</p>
         </div>
       </li>
@@ -18,7 +18,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-6">
           <div class="form-group">
-            <star-rating #rating value="0" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" size="25px" readonly="false" (rate)="onRate($event)"></star-rating>
+            <star-rating #rating value="0" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" size="24px" readonly="false" (rate)="onRate($event)"></star-rating>
           </div>
         </div>
         <div class="col-lg-12 col-md-12">

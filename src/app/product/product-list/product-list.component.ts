@@ -14,7 +14,6 @@ export class ProductListComponent implements OnInit {
 
   productList$:Observable<Product[]>;
   reviewList: Review[];
-  public averageRate: number;
   constructor(private service:ProductService) {}
 
   ngOnInit() {
@@ -27,13 +26,11 @@ export class ProductListComponent implements OnInit {
 
   public calculateRate(id: number) {
     this.reviewList = UtilsGeneral.getReviewList();
-    this.averageRate = 0;
     if (this.reviewList) {
       this.reviewList = this.reviewList.filter(item => item.productId===id);
       if (this.reviewList.length > 0 ) {
-        this.averageRate = this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
+        return this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
       }
     }
-    return this.averageRate;
   }
 }
