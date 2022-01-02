@@ -13,7 +13,8 @@ import {Review} from '../../model/review';
 export class ProductListComponent implements OnInit {
 
   productList$:Observable<Product[]>;
-  public reviewList: Review[];
+  reviewList: Review[];
+  public averageRate: number;
   constructor(private service:ProductService) {}
 
   ngOnInit() {
@@ -24,14 +25,15 @@ export class ProductListComponent implements OnInit {
     UtilsGeneral.setProduct(product);
   }
 
-  public averageRate(id: number) {
+  public calculateRate(id: number) {
     this.reviewList = UtilsGeneral.getReviewList();
+    this.averageRate = 0;
     if (this.reviewList) {
       this.reviewList = this.reviewList.filter(item => item.productId===id);
       if (this.reviewList.length > 0 ) {
-        return this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
+        this.averageRate = this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
       }
     }
-    return 0;
+    return this.averageRate;
   }
 }
