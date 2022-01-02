@@ -22,8 +22,8 @@
         <h6 style="display: inline-block">{{'product.arrival_date' | translate}}</h6>
         <span> {{product.detail.arrival_date | date: 'dd.MM.yyyy'}}</span>
         <div class="product-review">
-          <star-rating value="0" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" size="24px"></star-rating>
-          <p> 0 {{'product.reviews_small' | translate}}</p>
+          <star-rating value="{{averageRate}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" size="24px"></star-rating>
+          <p> {{numberOfComments}} {{'product.reviews_small' | translate}}</p>
         </div>
         <p>
           {{product.detail.desc}}
@@ -57,7 +57,7 @@
               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="tabs-item">
                   <div class="products-details-tab-content">
-                    <app-reviews [product]=product></app-reviews>
+                    <app-reviews [product]=product (myEvent)="receiveReview($event)"></app-reviews>
                   </div>
                 </div>
               </div>

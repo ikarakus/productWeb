@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {Product} from '../../model/product';
 import {Review} from '../../model/review';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
@@ -21,6 +21,7 @@ export class ReviewsComponent implements OnInit {
   reviewForm: FormGroup;
   public averageRate = 0;
   @ViewChild('rating',{static : false}) rating: StarRatingComponent;
+  @Output() myEvent: EventEmitter<any> = new EventEmitter();
   constructor(private toastr: ToastrService, public translate: TranslateService,private orderPipe: OrderPipe) {
     this.reviewList = UtilsGeneral.getReviewList();
     if (!this.reviewList) {
@@ -33,6 +34,7 @@ export class ReviewsComponent implements OnInit {
     if (this.reviewList.length > 0) {
       this.reviewList = this.reviewList.filter(item => item.productId===this.product.id);
       this.averageRate = this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
+      this.myEvent.emit({ averageRate: this.averageRate,numberOfComments:this.reviewList.length});
     }
   }
 
@@ -66,6 +68,7 @@ export class ReviewsComponent implements OnInit {
       this.rating.value = 0;
       this.reviewList = this.orderPipe.transform(this.reviewList, 'reviewDate');
       this.averageRate = this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
+      this.myEvent.emit({ averageRate: this.averageRate,numberOfComments:this.reviewList.length});
       this.toastr.warning(this.translate.instant('product.saved'));
     } else {
         this.toastr.warning(this.translate.instant('product.rating_warn'));
