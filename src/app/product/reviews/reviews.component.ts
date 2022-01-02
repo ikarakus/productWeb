@@ -19,6 +19,7 @@ export class ReviewsComponent implements OnInit {
   public review: Review;
   public reviewList: Review[];
   reviewForm: FormGroup;
+  public averageRate = 0;
   @ViewChild('rating',{static : false}) rating: StarRatingComponent;
   constructor(private toastr: ToastrService, public translate: TranslateService,private orderPipe: OrderPipe) {
     this.reviewList = UtilsGeneral.getReviewList();
@@ -31,6 +32,7 @@ export class ReviewsComponent implements OnInit {
     this.createReviewForm();
     if (this.reviewList.length > 0) {
       this.reviewList = this.reviewList.filter(item => item.productId===this.product.id);
+      this.averageRate = this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
     }
   }
 
@@ -54,10 +56,16 @@ export class ReviewsComponent implements OnInit {
     this.review.rate = this.reviewForm.controls['rate'].value;
     if (this.review.comment && this.review.rate > 0) {
       this.reviewList.push(this.review);
-      UtilsGeneral.setReviewList(this.reviewList);
+      let allReviewList = UtilsGeneral.getReviewList();
+      if (!allReviewList) {
+        allReviewList = [];
+      }
+      allReviewList.push(this.review);
+      UtilsGeneral.setReviewList(allReviewList);
       this.reviewForm.reset();
       this.rating.value = 0;
       this.reviewList = this.orderPipe.transform(this.reviewList, 'reviewDate');
+      this.averageRate = this.reviewList.reduce((sum, current) => sum + current.rate, 0) / this.reviewList.length;
       this.toastr.warning(this.translate.instant('product.saved'));
     } else {
         this.toastr.warning(this.translate.instant('product.rating_warn'));

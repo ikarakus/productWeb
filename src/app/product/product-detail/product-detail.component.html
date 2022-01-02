@@ -22,8 +22,8 @@
         <h6 style="display: inline-block">{{'product.arrival_date' | translate}}</h6>
         <span> {{product.detail.arrival_date | date: 'dd.MM.yyyy'}}</span>
         <div class="product-review">
-          <star-rating value="{{product.rating}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" size="25"></star-rating>
-          <p>{{product.detail.numberOfComments}} {{'product.reviews_small' | translate}}</p>
+          <star-rating value="0" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" size="25"></star-rating>
+          <p> 0 {{'product.reviews_small' | translate}}</p>
         </div>
         <p>
           {{product.detail.desc}}

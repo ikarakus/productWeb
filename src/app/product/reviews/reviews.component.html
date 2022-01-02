@@ -1,11 +1,5 @@
 <div class="product-review-form">
   <h3> {{'product.customer_reviews' | translate}}</h3>
-
-  <div class="review-title">
-    <star-rating value="{{product.rating}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" size="25"></star-rating>
-    <p>{{product.detail.numberOfComments}} {{'product.reviews_small' | translate}}</p>
-  </div>
-
   <div class="review-comments">
     <ul>
       <li *ngFor="let item of reviewList | orderBy: 'reviewDate':true"  style="list-style-type:none;">

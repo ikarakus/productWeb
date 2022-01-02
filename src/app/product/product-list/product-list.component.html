@@ -24,8 +24,7 @@
           <td>{{product.name}}</td>
           <td>{{product.price | number: '1.2-2'}}</td>
           <td>
-            {{product.rating}}
-            <star-rating value="{{product.rating}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" ></star-rating>
+            <star-rating value="{{averageRate(product.id)}}" totalstars="5" checkedcolor="gold" uncheckedcolor="grey" readonly="true" ></star-rating>
           </td>
           <td>
             <img src="{{product.thumbnail_url}}" alt="product_logo" width="32" height="32">

@@ -2,13 +2,11 @@
   { "id": 1001,
     "name": "BMW",
     "price" : "25000",
-    "rating": "3",
     "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/bmw.gif",
     "detail" : {
         "desc" : "The corporate headquarters and parent plant of the BMW Group are still located at the former BFW site in Milbertshofen, Munich to this day.",
         "currency" : "$",
         "arrival_date": "12.09.2022",
-        "numberOfComments": "2",
         "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/bmw.png",
         "additional_info" : "One of the anniversary BMW M models in 2022 for the brand’s 50th anniversary is the BMW M4 CSL based on the G82 generation. The flagship M4 model has been spotted on public roads since 2020 and it is now entering its final testing stages. And there are no better proving grounds than the Green Hell’s fast corners. An Alpine White M4 CSL prototype can be seen below featuring typical design elements reserved for a top sportscar"
       }
@@ -16,13 +14,11 @@
   { "id": 1002,
     "name": "Mercedes",
     "price" : "35000",
-    "rating": "4",
     "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/mercedes.gif",
     "detail" : {
       "desc" : " Mercedes-Benz and subsidiary Mercedes-Benz AG – of Daimler AG – are headquartered in Stuttgart, Baden-Württemberg, Germany",
       "currency" : "$",
       "arrival_date": "12.10.2022",
-      "numberOfComments": "3",
       "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/mercedes.jpg",
       "additional_info" : "Plug-in hybrids are an important milestone on the road to zero-emissions driving. Mercedes‑Benz Cars is pushing ahead with the development of its plug-in hybrids under the EQ Power label. With the A 250 e, A 250 e Saloon and B 250 e models from the compact-car family with the third-generation hybrid drive are now celebrating their premiere."
     }
@@ -30,13 +26,11 @@
   { "id": 1003,
     "name": "Tesla",
     "price" : "60000",
-    "rating": "4.5",
     "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/tesla.gif",
     "detail" : {
       "desc" : "Tesla, Inc. is an American electric vehicle and clean energy company based in Austin, Texas, United States. ",
       "currency" : "$",
       "arrival_date": "12.11.2022",
-      "numberOfComments": "4",
       "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/tesla.png",
       "additional_info" : "Every Tesla is engineered to provide maximum safety for drivers, passengers and pedestrians. In 2020, Model Y earned a 5-star safety rating in every category from the National Highway Traffic Safety Administration (NHTSA), achieving our goal of making Model Y one of the safest vehicles available."
     }
@@ -44,13 +38,11 @@
   { "id": 1004,
     "name": "Ferrari",
     "price" : "50000",
-    "rating": "5",
     "thumbnail_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/thumbnails/ferrari.gif",
     "detail" : {
       "desc" : "The headquarters of the company is based in Via Abetone Inferiore, 4. The name of the place is Maranello MO, while the country name if Italy",
       "currency" : "$",
       "arrival_date": "12.12.2022",
-      "numberOfComments": "5",
       "image_url": "https://content-guru.s3.eu-west-1.amazonaws.com/images/ferrari.png",
       "additional_info" : "The Ferrari 296 GTB is already making waves and dividing past and future with the first 120-degree V in a Ferrari production car. But if you’re seeking more, the Ferrari 296 GTB Assetto Fiorano is for you. Experience performance to the utmost with this upgrade package for the berlinetta."
     }
